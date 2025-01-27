@@ -14,24 +14,21 @@ namespace _9421_questions
         {
 
             //BinNode<string> tree = VisualTree<string>.GetTree();
-            //Q1
-            //Console.WriteLine(SumEven(BuildTree1())); //16
-            //Q2
-            //PrintPOLeft(BuildTree1());
-            //Q3
-            //PrintPOLeftNegative(BuildTree3());
-            //Q4
-            //BinNode<char> c = BuildTree4();
-            //CharShift(c);
-            //VisualTree<char>.DrawTree(c);
-            //Q5
-            //ClosestChild(BuildTree1());
-            //Q6
-            Console.WriteLine(CountLeaves(BuildTree1())); //3
-            Console.WriteLine(CountLeaves(BuildTree2())); //4
+
+
 
 
         }
+
+        // Tree 1                        Tree 2                        Tree 3                        Tree 4
+        //          1                            1                            -1                             m
+        //       /     \                      /     \                      /     \                      /     \
+        //      3       2                    2       3                   -2      3                    a       r
+        //     /       / \                  / \     / \                 /  \    /  \                 / \     / \
+        //    9       6   8                4   5   6   7             -4    5  6   -7               z   d   e   w
+        //     \
+        //      7
+
 
         //Q1
         //parameter - tree of ints
@@ -50,7 +47,7 @@ namespace _9421_questions
         //use Tree1
         static void PrintPOLeft(BinNode<int> root)
         {
-        
+
         }
 
         //Q3
@@ -85,9 +82,10 @@ namespace _9421_questions
         static void ClosestChild(BinNode<int> root)
         {
 
+
         }
 
-        //Q5
+        //Q6
         //parameter - tree of ints
         //return - int - number of leaves (no children)
         //use tree1 and tree2
@@ -95,6 +93,15 @@ namespace _9421_questions
         static int CountLeaves(BinNode<int> root)
         {
             return 0;
+        }
+
+        //Q6
+        //parameter - tree of ints
+        //return - true - if all left children are smaller than right children. false otherwise
+        //use: tree1 (true), tree2 (false)
+        static bool AllLeftLTRight(BinNode<int> root)
+        {
+            return false;
         }
 
 
@@ -242,4 +249,3 @@ namespace _9421_questions
 
     }
 }
-
